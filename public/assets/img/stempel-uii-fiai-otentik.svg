@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <!-- Top arc: runs clockwise from left to right -->
+    <path id="topArc" d="M 44,150 A 106,106 0 0,1 256,150" fill="none"/>
+    <!-- Bottom arc: runs counter-clockwise from left to right so text reads right-side up -->
+    <path id="bottomArc" d="M 44,150 A 106,106 0 0,0 256,150" fill="none"/>
+    <!-- Clip path for vertical stripes inside inner circle -->
+    <clipPath id="innerCircleClip">
+      <circle cx="150" cy="150" r="74"/>
+    </clipPath>
+  </defs>
+
+  <g color="#1E4799" fill="#1E4799" stroke="#1E4799">
+    <!-- Outer thick ring -->
+    <circle cx="150" cy="150" r="138" fill="none" stroke-width="4.2"/>
+    <!-- Outer second thin ring -->
+    <circle cx="150" cy="150" r="129" fill="none" stroke-width="1.8"/>
+    <!-- Inner ring -->
+    <circle cx="150" cy="150" r="82" fill="none" stroke-width="2.5"/>
+
+    <!-- Vertical stripes / hatching in inner circle -->
+    <g clip-path="url(#innerCircleClip)">
+      <line x1="85" y1="50" x2="85" y2="250" stroke-width="4.2"/>
+      <line x1="94" y1="50" x2="94" y2="250" stroke-width="4.2"/>
+      <line x1="103" y1="50" x2="103" y2="250" stroke-width="4.2"/>
+      <line x1="112" y1="50" x2="112" y2="250" stroke-width="4.2"/>
+      <line x1="121" y1="50" x2="121" y2="250" stroke-width="4.2"/>
+      <line x1="130" y1="50" x2="130" y2="250" stroke-width="4.2"/>
+      <line x1="139" y1="50" x2="139" y2="250" stroke-width="4.2"/>
+      <line x1="148" y1="50" x2="148" y2="250" stroke-width="4.2"/>
+      <line x1="157" y1="50" x2="157" y2="250" stroke-width="4.2"/>
+      <line x1="166" y1="50" x2="166" y2="250" stroke-width="4.2"/>
+      <line x1="175" y1="50" x2="175" y2="250" stroke-width="4.2"/>
+      <line x1="184" y1="50" x2="184" y2="250" stroke-width="4.2"/>
+      <line x1="193" y1="50" x2="193" y2="250" stroke-width="4.2"/>
+      <line x1="202" y1="50" x2="202" y2="250" stroke-width="4.2"/>
+      <line x1="211" y1="50" x2="211" y2="250" stroke-width="4.2"/>
+    </g>
+
+    <!-- Center horizontal banner box spanning across inner circle -->
+    <rect x="68" y="133" width="164" height="34" fill="#FFFFFF" stroke="#1E4799" stroke-width="3"/>
+
+    <!-- Left Star -->
+    <polygon points="84,141 87,147 94,148 89,153 91,159 84,155 77,159 79,153 74,148 81,147" fill="#1E4799" stroke="none"/>
+
+    <!-- Center text: YOGYAKARTA -->
+    <text x="150" y="156" font-family="'Arial', 'Helvetica', sans-serif" font-size="16.5" font-weight="bold" fill="#1E4799" stroke="none" text-anchor="middle" letter-spacing="1">YOGYAKARTA</text>
+
+    <!-- Right Star -->
+    <polygon points="216,141 219,147 226,148 221,153 223,159 216,155 209,159 211,153 206,148 213,147" fill="#1E4799" stroke="none"/>
+
+    <!-- Top Text: UNIVERSITAS ISLAM INDONESIA -->
+    <text font-family="'Arial', 'Helvetica', sans-serif" font-size="15" font-weight="bold" fill="#1E4799" stroke="none" letter-spacing="2.2">
+      <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+        UNIVERSITAS ISLAM INDONESIA
+      </textPath>
+    </text>
+
+    <!-- Bottom Text: FAKULTAS AGAMA ISLAM -->
+    <text font-family="'Arial', 'Helvetica', sans-serif" font-size="15" font-weight="bold" fill="#1E4799" stroke="none" letter-spacing="2.2">
+      <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+        FAKULTAS AGAMA ISLAM
+      </textPath>
+    </text>
+  </g>
+</svg>

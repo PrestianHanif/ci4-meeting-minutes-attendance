@@ -1,0 +1,139 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="480" fill="url(#bgGrad)" rx="10" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Grid subtle background -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E2E8F0" stroke-width="0.8"/>
+  </pattern>
+  <rect width="800" height="480" fill="url(#grid)" rx="10"/>
+
+  <!-- Compass Rose -->
+  <g transform="translate(740, 50)">
+    <circle r="22" fill="#FFFFFF" stroke="#0F2C59" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <polygon points="0,-18 5,-2 0,-5 -5,-2" fill="#C5A059"/>
+    <polygon points="0,18 5,2 0,5 -5,2" fill="#64748B"/>
+    <text x="0" y="-8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#0F2C59" text-anchor="middle">U</text>
+    <text x="0" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#64748B" text-anchor="middle">S</text>
+  </g>
+
+  <!-- Title Badge -->
+  <g transform="translate(30, 25)">
+    <rect width="360" height="34" rx="6" fill="#0F2C59"/>
+    <text x="180" y="22" font-family="'Noto Serif', serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">DENAH AKSES MENUJU RUANG SIDANG 03.16</text>
+  </g>
+
+  <!-- Road: Jl. Kaliurang KM 14.5 (Vertical Left) -->
+  <rect x="50" y="80" width="70" height="380" fill="#94A3B8" rx="4"/>
+  <line x1="85" y1="80" x2="85" y2="460" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="12,10"/>
+  
+  <!-- Road Text -->
+  <text x="85" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#0F2C59" text-anchor="middle" transform="rotate(-90 85 270)">
+    ◄ Dari Kota Yogyakarta (Arah Selatan) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JL. KALIURANG KM 14,5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ke Arah Kaliurang (Utara) ►
+  </text>
+
+  <!-- Gerbang Utama UII -->
+  <g transform="translate(120, 210)">
+    <rect width="80" height="70" fill="#0F2C59" rx="4"/>
+    <rect x="5" y="5" width="70" height="60" fill="none" stroke="#C5A059" stroke-width="1.5" rx="3"/>
+    <text x="40" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GERBANG</text>
+    <text x="40" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#F8FAFC" text-anchor="middle">UTAMA UII</text>
+    <text x="40" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#FDE047" text-anchor="middle">Security &amp; Portal</text>
+  </g>
+
+  <!-- Boulevard Road connecting Gate to Roundabout -->
+  <rect x="200" y="225" width="160" height="40" fill="#CBD5E1"/>
+  <line x1="200" y1="245" x2="360" y2="245" stroke="#F1F5F9" stroke-width="2" stroke-dasharray="8,6"/>
+
+  <!-- Direction Arrows on Boulevard -->
+  <path d="M 230 245 L 260 245" stroke="#C5A059" stroke-width="3" marker-end="url(#arrow)"/>
+  <polygon points="265,245 255,240 255,250" fill="#C5A059"/>
+  <text x="280" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="bold" fill="#0F2C59">Boulevard Kampus Terpadu</text>
+
+  <!-- Roundabout (Bundaran Air Mancur UII) -->
+  <g transform="translate(390, 245)">
+    <circle r="42" fill="#E2E8F0" stroke="#94A3B8" stroke-width="3"/>
+    <circle r="26" fill="#0284C7" stroke="#38BDF8" stroke-width="2"/>
+    <circle r="8" fill="#FFFFFF"/>
+    <text x="0" y="3" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BUNDARAN</text>
+  </g>
+
+  <!-- Road from Roundabout to Gedung FIAI -->
+  <path d="M 425 220 L 490 170 L 520 170" fill="none" stroke="#CBD5E1" stroke-width="38" stroke-linejoin="round"/>
+  <path d="M 425 220 L 490 170 L 520 170" fill="none" stroke="#F1F5F9" stroke-width="2" stroke-dasharray="6,6" stroke-linejoin="round"/>
+
+  <!-- Gedung KH. A. Wahid Hasyim (FIAI UII) Building block -->
+  <g transform="translate(520, 95)" filter="url(#cardShadow)">
+    <rect width="245" height="175" rx="8" fill="#0F2C59" stroke="#C5A059" stroke-width="2"/>
+    <rect x="6" y="6" width="233" height="32" rx="4" fill="#1E3A8A"/>
+    <text x="122" y="26" font-family="'Noto Serif', serif" font-size="12" font-weight="bold" fill="#F8FAFC" text-anchor="middle">GEDUNG K.H. A. WAHID HASYIM</text>
+    <text x="122" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#FDE047" text-anchor="middle">FAKULTAS ILMU AGAMA ISLAM (FIAI)</text>
+    
+    <!-- Floor Detail Box -->
+    <rect x="15" y="65" width="215" height="95" rx="6" fill="#FFFFFF"/>
+    <rect x="22" y="73" width="201" height="30" rx="4" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+    <text x="122" y="88" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#92400E" text-anchor="middle">LANTAI 3 — RUANG SIDANG 03.16</text>
+    <text x="122" y="99" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#B45309" text-anchor="middle">(Lokasi Sidang Promosi Doktor)</text>
+
+    <!-- Vertical access icons -->
+    <rect x="25" y="112" width="95" height="38" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="72" y="126" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="bold" fill="#0F2C59" text-anchor="middle">🛗 LIFT UTAMA</text>
+    <text x="72" y="140" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Akses Mudah Lt. 3</text>
+
+    <rect x="128" y="112" width="95" height="38" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="175" y="126" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="bold" fill="#0F2C59" text-anchor="middle">🪜 TANGGA TIMUR</text>
+    <text x="175" y="140" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Langsung ke Lt. 3</text>
+  </g>
+
+  <!-- Drop-off Point VIP / Tamu -->
+  <g transform="translate(485, 275)" filter="url(#cardShadow)">
+    <rect width="130" height="50" rx="6" fill="#10B981" stroke="#047857" stroke-width="1.5"/>
+    <text x="65" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">📍 DROP-OFF TAMU</text>
+    <text x="65" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#ECFDF5" text-anchor="middle">Lobi Depan Gedung FIAI</text>
+  </g>
+
+  <!-- Kantong Parkir Mobil (P1) -->
+  <g transform="translate(630, 280)" filter="url(#cardShadow)">
+    <rect width="135" height="75" rx="6" fill="#3B82F6" stroke="#1D4ED8" stroke-width="1.5"/>
+    <text x="67" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🅿️ PARKIR MOBIL (P1)</text>
+    <text x="67" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#EFF6FF" text-anchor="middle">Khusus Tamu &amp; Dewan Penguji</text>
+    <text x="67" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#DBEAFE" text-anchor="middle">Kapasitas Luas &amp; Berkanopi</text>
+  </g>
+
+  <!-- Kantong Parkir Motor & Cadangan (P2) -->
+  <g transform="translate(520, 370)" filter="url(#cardShadow)">
+    <rect width="245" height="55" rx="6" fill="#64748B" stroke="#334155" stroke-width="1.5"/>
+    <text x="122" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🅿️ PARKIR MOTOR &amp; PARKIR CADANGAN (P2)</text>
+    <text x="122" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#F1F5F9" text-anchor="middle">Area Sayap Selatan Gedung Wahid Hasyim</text>
+  </g>
+
+  <!-- Alur navigasi panah -->
+  <path d="M 405 220 C 440 180, 470 170, 515 170" fill="none" stroke="#DC2626" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="518,170 508,165 508,175" fill="#DC2626"/>
+
+  <!-- Legend Footer -->
+  <g transform="translate(30, 440)">
+    <rect width="450" height="28" rx="4" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <circle cx="20" cy="14" r="5" fill="#DC2626"/>
+    <text x="32" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#334155">Alur Kedatangan</text>
+
+    <rect x="125" y="8" width="12" height="12" rx="2" fill="#10B981"/>
+    <text x="143" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#334155">Drop-off Tamu</text>
+
+    <rect x="225" y="8" width="12" height="12" rx="2" fill="#3B82F6"/>
+    <text x="243" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#334155">Kantong Parkir</text>
+
+    <rect x="330" y="8" width="12" height="12" rx="2" fill="#0F2C59"/>
+    <text x="348" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#334155">Gedung Sidang (FIAI)</text>
+  </g>
+</svg>

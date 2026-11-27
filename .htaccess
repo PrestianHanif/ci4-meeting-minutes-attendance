@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Keamanan: Cegah akses langsung ke file konfigurasi dan folder sistem
+    RewriteRule ^\.env - [F,L,NC]
+    RewriteRule ^(app|writable|vendor)($|/) - [F,L,NC]
+
+    # Arahkan semua request ke folder public/
+    RewriteCond %{REQUEST_URI} !/public/ [NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L,QSA]
+
+    # Root request (misal https://ebook.kowpi.id/ebook-anak-yatim/)
+    RewriteRule ^$ public/ [L,QSA]
+</IfModule>
+
+# Disable directory browsing
+Options -Indexes
